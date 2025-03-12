@@ -29,7 +29,7 @@ saippua = lataa_kuva("kuvat/saippua.png")
 muovipullo = lataa_kuva("kuvat/muovipullo.png")
 
 lasipullo = lataa_kuva("kuvat/lasipullo.png")
-lasitölkki = lataa_kuva("kuvat/lasitolkki.png")
+lasipurkki = lataa_kuva("kuvat/lasipurkki.png")
 
 omena = lataa_kuva("kuvat/omena.png")
 kalaruodot = lataa_kuva("kuvat/kalaruodot.png")

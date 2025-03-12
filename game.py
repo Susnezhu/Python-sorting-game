@@ -11,10 +11,11 @@ naytto = pygame.display.set_mode((LEVEYS, KORKEUS))
 pygame.display.set_caption("Roskien lajittelu peli")
 
 
+#eri roska ryhmien listat ja oliona kuvat
 paperi = [piirustus, sanomalehti, kirjekuori]
 kartonki = [paperikassi, munakeno, maitopurkki]
 muovi = [muovipussi,saippua, muovipullo]
-lasi = [lasipullo,lasitölkki]
+lasi = [lasipullo,lasipurkki]
 bio = [omena, kalaruodot, kukat]
 metalli = [kattila, ananaspurkki]
 
