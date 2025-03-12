@@ -6,12 +6,12 @@ pygame.init()
 from kuvien_lataus import * #tiedosto, jossa on kaikki kuvat
 
 LEVEYS = 900
-KORKEUS = 700
+KORKEUS = 600
 naytto = pygame.display.set_mode((LEVEYS, KORKEUS))
 pygame.display.set_caption("Roskien lajittelu peli")
 
 
-#eri roska ryhmien listat ja oliona kuvat
+#eri roskaryhmien listat ja oliona kuvat
 paperi = [piirustus, sanomalehti, kirjekuori]
 kartonki = [paperikassi, munakeno, maitopurkki]
 muovi = [muovipussi,saippua, muovipullo]
@@ -51,7 +51,6 @@ roskat.lisaa(lasi,4)
 roskat.lisaa(bio,5)
 roskat.lisaa(metalli,6)
 
-nelio = pygame
 
 print(roskat)
 
