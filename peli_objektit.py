@@ -25,7 +25,6 @@ class PeliObjektit:
         if self.reunat.collidepoint(x, y):
             self.paivita(x, y)
             
-
 #lista, jossa on PeliObjekti luokan oliot
 objektit = (
     [PeliObjektit(roska, 1) for roska in paperi] + 
