@@ -1,7 +1,6 @@
 #Tämä tiedosto lataa kaikki kuvat ja tallentaa niitä
 import pygame
 
-#Koodi ei toimi ennen kun saan kaikki kuvat kansioon
 def lataa_kuva(nimi:str):
     return pygame.image.load(nimi)
 
@@ -37,3 +36,12 @@ kukat = lataa_kuva("kuvat/kukat.png")
 
 kattila = lataa_kuva("kuvat/kattila.png")
 ananaspurkki = lataa_kuva("kuvat/ananaspurkki.png")
+
+
+#ryhmitetys roskat listoissa
+paperi = [piirustus, sanomalehti, kirjekuori]
+kartonki = [paperikassi, munakeno, maitopurkki]
+muovi = [muovipussi,saippua, muovipullo]
+lasi = [lasipullo,lasipurkki]
+bio = [omena, kalaruodot, kukat]
+metalli = [kattila, ananaspurkki]
