@@ -12,7 +12,6 @@ class PeliObjektit:
         self.reunat = self.kuva.get_rect(topleft=(self.x, self.y))
         
         self.arvo = arvo
-        self.valittu = False
         self.alkuperaiset_kordinaatit = self.x, self.y
         
     def paivita(self, x, y):

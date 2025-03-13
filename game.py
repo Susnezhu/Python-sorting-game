@@ -5,6 +5,7 @@ pygame.init()
 
 from kuvien_lataus import * #tiedosto, jossa on kaikki kuvat
 from peli_objektit import * #tiedosto, jossa on luokka PeliObjektit
+from roskakorit import *
 
 LEVEYS = 900
 KORKEUS = 600
@@ -16,13 +17,9 @@ seuraa_hiirta = False
 valittu_objekti = None
 while True:
     naytto.blit(taustakuva, (0,0))
-    naytto.blit(kartonki_roskakori, (500, 260))
-    naytto.blit(bio_roskakori, (700,260))
-    naytto.blit(lasi_roskakori, (100, 200))
-    naytto.blit(metalli_roskakori, (300, 200))
-    naytto.blit(muovi_roskakori, (600, 270))
-    naytto.blit(paperi_roskakori, (200, 200))
- 
+    
+    for roskakori in roskakorit:
+        roskakori.lisaa(naytto)
  
     for tapahtuma in pygame.event.get():
         if tapahtuma.type == pygame.MOUSEBUTTONDOWN:
