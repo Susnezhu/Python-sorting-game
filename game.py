@@ -11,6 +11,7 @@ KORKEUS = 600
 naytto = pygame.display.set_mode((LEVEYS, KORKEUS))
 pygame.display.set_caption("Roskien lajittelu peli")
 
+pisteet = 0
 
 seuraa_hiirta = False
 valittu_objekti = None

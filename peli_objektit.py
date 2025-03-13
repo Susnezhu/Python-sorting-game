@@ -6,7 +6,7 @@ from kuvien_lataus import *
 class PeliObjektit:
     def __init__(self, kuva, arvo):
         self.x = random.randint(0, 900 - kuva.get_width())
-        self.y = random.randint(400, 600 - kuva.get_height())
+        self.y = random.randint(450, 600 - kuva.get_height())
         
         self.kuva = kuva
         self.reunat = self.kuva.get_rect(topleft=(self.x, self.y))
