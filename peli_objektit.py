@@ -24,6 +24,7 @@ class PeliObjektit:
     def siirry(self, x, y):
         if self.reunat.collidepoint(x, y):
             self.paivita(x, y)
+            
 
 #lista, jossa on PeliObjekti luokan oliot
 objektit = (
