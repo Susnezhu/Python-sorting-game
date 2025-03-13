@@ -10,7 +10,14 @@ class PeliObjektit:
         
         self.kuva = kuva
         self.reunat = self.kuva.get_rect(topleft=(self.x, self.y))
-        
+
+        self.kartonki_reunat = self.kartonki_roskakori.get_rect(topleft=(self.x, self.y))
+        self.bio_reunat = self.bio_roskakori.get_rect(topleft=(self.x, self.y))
+        self.lasi_reunat = self.lasi_roskakori.get_rect(topleft=(self.x, self.y))
+        self.metalli_reunat = self.metalli_roskakori.get_rect(topleft=(self.x, self.y))
+        self.muovi_reunat = self.muovi_roskakori.get_rect(topleft=(self.x, self.y))
+        self.paperi_reunat = self.paperi_roskakori.get_rect(topleft=(self.x, self.y))
+
         self.arvo = arvo
         
     def paivita(self, dx, dy):
