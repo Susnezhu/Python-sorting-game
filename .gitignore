@@ -4,6 +4,4 @@ __pycache__/
 *.pyc
 *.pyo
 .DS_Store
-echo ".DS_Store" >> .gitignore
-git rm --cached kuvat/.DS_Store
 kuvat/.DS_Store
