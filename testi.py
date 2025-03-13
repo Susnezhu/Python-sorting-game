@@ -51,7 +51,6 @@ roskat.lisaa(lasi,4)
 roskat.lisaa(bio,5)
 roskat.lisaa(metalli,6)
 
-nelio = pygame
 
 print(roskat)
 
@@ -60,5 +59,28 @@ while True:
         if tapahtuma.type == pygame.QUIT:
             exit()
 
+        if tapahtuma.type == pygame.KEYDOWN:
+            if Roskat is None:
+                Roskat = None
+
+            else:
+                hiiri_x, hiiri_y = pygame.mouse.get_pos()
+                for roska, sijainti in Roskat.items():
+                    rect = roskat[roska].get_rect(topleft=sijainti)
+                    if rect.collidepoint(hiiri_x, hiiri_y):
+                        Roskat = roska
+                        Roskat = sijainti
+
+                        break
+
+
+    naytto.blit(taustakuva, (0,0))
+    naytto.blit(bio_roskakori, (700,260))
+    naytto.blit(kartonki_roskakori, (500, 260))
+    naytto.blit(lasi_roskakori, (100,200))
+    naytto.blit(metalli_roskakori, (300,200))
+    naytto.blit(muovi_roskakori, (600,270))
+    naytto.blit(paperi_roskakori, (200,200))
+    naytto.blit(piirustus, (0,0))
 
     pygame.display.flip()
