@@ -5,6 +5,9 @@ def lataa_kuva(nimi:str):
     return pygame.image.load(nimi)
 
 taustakuva = lataa_kuva("kuvat/background.png")
+kulta = lataa_kuva("kuvat/kultamitali.png")
+pronssi = lataa_kuva("kuvat/bronze_mitali.png")
+hopea = lataa_kuva("kuvat/silver_mitali.png")
 
 #roskakorit
 bio_roskakori = lataa_kuva("kuvat/bio_roskakori.png")
