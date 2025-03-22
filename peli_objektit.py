@@ -27,6 +27,12 @@ class PeliObjektit:
     def poista(self, lista):
         if self in lista:
             lista.remove(self)
+    
+    def kopio(self):
+        uusi_objekti = PeliObjektit(self.kuva.copy(), self.arvo)
+        uusi_objekti.x, uusi_objekti.y = self.alkuperaiset_kordinaatit
+        uusi_objekti.reunat = uusi_objekti.kuva.get_rect(topleft=(uusi_objekti.x, uusi_objekti.y))
+        return uusi_objekti
             
 #lista, jossa on PeliObjekti luokan oliot
 objektit = (
