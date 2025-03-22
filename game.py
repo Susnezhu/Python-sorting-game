@@ -20,7 +20,7 @@ peli_loppui = False
 def uusi_peli():
     global peli_loppui, objektit, objektit_kopio, pisteet
     peli_loppui = False
-    objektit = objektit_kopio
+    objektit = [obj.kopio() for obj in objektit_kopio]
     pisteet = 0
 
 
